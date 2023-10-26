@@ -1,20 +1,32 @@
 {
   "pages": {
-    "/page": [
+    "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/layout": [
+    "/(beforeLogin)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/app/(beforeLogin)/page.js"
+    ],
+    "/(beforeLogin)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(beforeLogin)/layout.css",
+      "static/chunks/app/(beforeLogin)/layout.js"
+    ],
+    "/(beforeLogin)/@modal/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(beforeLogin)/@modal/page.css",
+      "static/chunks/app/(beforeLogin)/@modal/page.js"
     ]
   }
 }
