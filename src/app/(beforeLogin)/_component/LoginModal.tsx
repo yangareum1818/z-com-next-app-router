@@ -1,14 +1,24 @@
-import style from "@/app/(beforeLogin)/@modal/login.module.css";
+"use client";
 
-export default function Page() {
+import style from "@/app/(beforeLogin)/_component/login.module.css";
+import { useState } from "react";
+
+export default function LoginModal() {
+  const [id, setId] = useState();
+  const [password, setPassword] = useState();
+  const [message, setMessage] = useState();
+
   const onSubmit = () => {};
   const onClickClose = () => {};
+
+  const onChangId = () => {};
+  const onChangPassword = () => {};
 
   return (
     <div className={style.modalBackground}>
       <div className={style.modal}>
         <div className={style.modalHeader}>
-          <button className={style.closeButton}>
+          <button className={style.closeButton} onClick={onClickClose}>
             <svg
               width={24}
               viewBox="0 0 24 24"
@@ -22,7 +32,7 @@ export default function Page() {
           </button>
           <div>Z 가입하기</div>
         </div>
-        <form>
+        <form onSubmit={onSubmit}>
           <div className={style.modalBody}>
             <div className={style.inputDiv}>
               <label className={style.inputLabel} htmlFor="id">
@@ -33,6 +43,7 @@ export default function Page() {
                 className={style.input}
                 type="text"
                 placeholder="아이디를 입력해주세용."
+                onChange={onChangId}
               />
             </div>
             <div className={style.inputDiv}>
@@ -44,6 +55,7 @@ export default function Page() {
                 className={style.input}
                 type="password"
                 placeholder="비밀번호를 입력해주세용."
+                onChange={onChangPassword}
               />
             </div>
           </div>

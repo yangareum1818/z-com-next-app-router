@@ -1,5 +1,11 @@
 {
   "pages": {
+    "/(beforeLogin)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(beforeLogin)/layout.css",
+      "static/chunks/app/(beforeLogin)/layout.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -10,6 +16,33 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
+    ],
+    "/(beforeLogin)/@modal/default": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(beforeLogin)/@modal/default.js"
+    ],
+    "/(beforeLogin)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(beforeLogin)/page.js"
+    ],
+    "/(beforeLogin)/@modal/(.)i/flow/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(beforeLogin)/@modal/(.)i/flow/login/page.js",
+      "static/css/app/(beforeLogin)/@modal/(.)i/flow/login/page.css"
+    ],
+    "/(beforeLogin)/i/flow/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(beforeLogin)/i/flow/login/page.js",
+      "static/css/app/(beforeLogin)/i/flow/login/page.css"
+    ],
+    "/(beforeLogin)/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(beforeLogin)/login/page.js"
     ]
   }
 }
