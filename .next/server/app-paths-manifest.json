@@ -1,1 +1,8 @@
-{}
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(beforeLogin)/page": "app/(beforeLogin)/page.js",
+  "/(beforeLogin)/@modal/(.)i/flow/login/page": "app/(beforeLogin)/@modal/(.)i/flow/login/page.js",
+  "/(beforeLogin)/i/flow/login/page": "app/(beforeLogin)/i/flow/login/page.js",
+  "/(beforeLogin)/i/flow/signup/page": "app/(beforeLogin)/i/flow/signup/page.js",
+  "/(beforeLogin)/@modal/(.)i/flow/signup/page": "app/(beforeLogin)/@modal/(.)i/flow/signup/page.js"
+}
