@@ -1,11 +1,5 @@
 {
   "pages": {
-    "/(beforeLogin)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(beforeLogin)/layout.css",
-      "static/chunks/app/(beforeLogin)/layout.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -17,38 +11,32 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/(beforeLogin)/page": [
+    "/(beforeLogin)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(beforeLogin)/page.js"
-    ],
-    "/(beforeLogin)/i/flow/login/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(beforeLogin)/i/flow/login/page.css",
-      "static/chunks/app/(beforeLogin)/i/flow/login/page.js"
+      "static/css/app/(beforeLogin)/layout.css",
+      "static/chunks/app/(beforeLogin)/layout.js"
     ],
     "/(beforeLogin)/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(beforeLogin)/login/page.js"
     ],
-    "/(beforeLogin)/i/flow/signup/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(beforeLogin)/i/flow/signup/page.css",
-      "static/chunks/app/(beforeLogin)/i/flow/signup/page.js"
-    ],
     "/(beforeLogin)/@modal/default": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(beforeLogin)/@modal/default.js"
     ],
-    "/(beforeLogin)/@modal/(.)i/flow/signup/page": [
+    "/(beforeLogin)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(beforeLogin)/@modal/(.)i/flow/signup/page.css",
-      "static/chunks/app/(beforeLogin)/@modal/(.)i/flow/signup/page.js"
+      "static/chunks/app/(beforeLogin)/page.js"
+    ],
+    "/(beforeLogin)/@modal/(.)i/flow/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(beforeLogin)/@modal/(.)i/flow/login/page.css",
+      "static/chunks/app/(beforeLogin)/@modal/(.)i/flow/login/page.js"
     ]
   }
 }
