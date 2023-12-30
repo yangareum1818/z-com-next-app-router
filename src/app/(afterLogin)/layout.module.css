@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  align-items: stretch;
+}
+
+.leftSectionWrapper {
+  background: goldenrod;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.leftSection {
+  background: gold;
+  width: 27.5rem;
+  height: 100dvh;
+}
+.leftSectionFixed {
+  position: fixed;
+  width: inherit;
+  height: 100dvh;
+}
+
+.logo {
+  display: inline-block;
+}
+.logo:hover {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+.logoLink {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+}
+.logoImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.rightSectionWrapper {
+  background: green;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100dvh;
+}
+.rightSectionInner {
+  background: greenyellow;
+  display: flex;
+  justify-content: space-between;
+  width: 99rem;
+  height: 100%;
+}
+
+.main {
+  background: #0f0;
+  width: 60rem;
+}
+
+.rightSection {
+  background: #f00;
+  width: 35rem;
+  height: 100%;
+}
+
+.search {
+  position: fixed;
+  margin-top: 0.6rem;
+  margin-bottom: 1.2rem;
+  width: inherit;
+  height: 4.2rem;
+  border-radius: 2.1rem;
+  background-color: rgb(83, 100, 113);
+}
+
+.search input {
+  margin-left: 2rem;
+  padding: 1.2rem;
+  width: 31rem;
+  background-color: inherit;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}

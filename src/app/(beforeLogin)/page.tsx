@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div className={styles.left}>
-        <Image src={zlogo} alt="logo" />
+        <Image src={zlogo} alt="logo" priority />
       </div>
       <div className={styles.right}>
         <h1>지금 일어나고 있는 일</h1>
