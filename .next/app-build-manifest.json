@@ -11,21 +11,31 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/(beforeLogin)/page": [
+    "/(afterLogin)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(beforeLogin)/page.js"
+      "static/css/app/(afterLogin)/layout.css",
+      "static/chunks/app/(afterLogin)/layout.js"
     ],
-    "/(beforeLogin)/layout": [
+    "/(afterLogin)/home/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(beforeLogin)/layout.css",
-      "static/chunks/app/(beforeLogin)/layout.js"
+      "static/chunks/app/(afterLogin)/home/page.js"
     ],
-    "/(beforeLogin)/@modal/default": [
+    "/(afterLogin)/home/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(beforeLogin)/@modal/default.js"
+      "static/chunks/app/(afterLogin)/home/layout.js"
+    ],
+    "/(afterLogin)/explore/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(afterLogin)/explore/page.js"
+    ],
+    "/(afterLogin)/messages/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(afterLogin)/messages/page.js"
     ]
   }
 }
