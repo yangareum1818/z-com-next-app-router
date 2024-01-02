@@ -1,4 +1,3 @@
-const Profile = () => {
-  return <main>프로필</main>;
-};
-export default Profile;
+export default function Profile() {
+  return <main>프로필 페이지</main>;
+}

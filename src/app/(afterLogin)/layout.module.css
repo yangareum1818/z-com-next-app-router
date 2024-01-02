@@ -4,7 +4,6 @@
 }
 
 .leftSectionWrapper {
-  background: goldenrod;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -12,14 +11,18 @@
   flex-shrink: 0;
 }
 .leftSection {
-  background: gold;
   width: 27.5rem;
   height: 100dvh;
 }
 .leftSectionFixed {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   width: inherit;
   height: 100dvh;
+}
+.leftSectionFixed nav {
+  flex: 1;
 }
 
 .logo {
@@ -42,8 +45,24 @@
   height: 4rem;
 }
 
+.postButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23.4rem;
+  height: 5.2rem;
+  color: rgb(255, 255, 255);
+  background: rgb(29, 155, 240);
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0.8rem 2.8rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border-radius: 2.6rem;
+}
+.postButton:hover {
+  background: rgb(26, 140, 216);
+}
+
 .rightSectionWrapper {
-  background: green;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -52,7 +71,6 @@
   height: 100dvh;
 }
 .rightSectionInner {
-  background: greenyellow;
   display: flex;
   justify-content: space-between;
   width: 99rem;
@@ -60,13 +78,11 @@
 }
 
 .main {
-  background: #0f0;
   width: 60rem;
   height: 200vh;
 }
 
 .rightSection {
-  background: #f00;
   width: 35rem;
   height: 100%;
 }
@@ -91,8 +107,10 @@
 .search input {
   margin-left: 0.5rem;
   padding: 1.2rem;
+  width: 26rem;
   background-color: inherit;
   font-size: 1.5rem;
   border: none;
   outline: none;
+  color: #000;
 }

@@ -1,3 +1,5 @@
 {
+  "/(afterLogin)/explore/page": "app/(afterLogin)/explore/page.js",
+  "/(afterLogin)/messages/page": "app/(afterLogin)/messages/page.js",
   "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js"
 }
