@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 60rem;
+  border-right: 0.1rem solid rgb(239, 243, 244);
+  border-left: 0.1rem solid rgb(239, 243, 244);
+}
