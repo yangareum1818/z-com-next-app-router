@@ -22,16 +22,6 @@
       "static/chunks/main-app.js",
       "static/css/app/(afterLogin)/home/page.css",
       "static/chunks/app/(afterLogin)/home/page.js"
-    ],
-    "/(afterLogin)/explore/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(afterLogin)/explore/page.js"
-    ],
-    "/(afterLogin)/messages/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(afterLogin)/messages/page.js"
     ]
   }
 }
