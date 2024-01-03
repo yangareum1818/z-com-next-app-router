@@ -27,10 +27,8 @@
 
 .logo {
   display: inline-block;
-}
-.logo:hover {
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
+  margin-top: 0.6rem;
+  margin-bottom: 1.2rem;
 }
 .logoLink {
   display: flex;
@@ -38,6 +36,10 @@
   justify-content: center;
   width: 5rem;
   height: 5rem;
+}
+.logoLink:hover {
+  background: rgba(15, 20, 25, 0.1);
+  border-radius: 50%;
 }
 .logoImage {
   display: block;
@@ -49,6 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1.2rem;
   width: 23.4rem;
   height: 5.2rem;
   color: rgb(255, 255, 255);
@@ -87,6 +90,11 @@
   height: 100%;
 }
 
+.searchForm {
+  margin-bottom: 6rem;
+  width: inherit;
+}
+
 .search {
   position: fixed;
   display: flex;
@@ -113,4 +121,13 @@
   border: none;
   outline: none;
   color: #000;
+}
+
+.followRecommend {
+  margin: 1.2rem 0;
+  padding: 1.2rem 1.6rem;
+  background: rgb(247, 249, 249);
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 1.6rem;
 }
