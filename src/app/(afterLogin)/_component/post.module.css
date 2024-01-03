@@ -1,0 +1,74 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.6rem;
+  border-bottom: 0.1rem solid rgb(239, 243, 244);
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.post:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.postWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.postUserSection {
+  margin-right: 1.2rem;
+  width: 4rem;
+}
+.postUserImage {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+.postUserImage img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+.postShade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+.postShade:hover {
+  background-color: rgba(26, 26, 26, 0.15);
+}
+
+.postBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.postMeta {
+  display: flex;
+  flex-direction: row;
+}
+.postUserName {
+  font-weight: bold;
+}
+.postUserId {
+}
+.postDate {
+  color: rgb(83, 100, 113);
+}
+.postDate:hover {
+  text-decoration: underline;
+}
+.postImageSection {
+}
+.postImageSection img {
+  margin-top: 1.2rem;
+  width: 100%;
+  border-radius: 1.6rem;
+}
