@@ -1,0 +1,23 @@
+.container {
+  padding: 1.2rem 1.6rem;
+  display: block;
+  height: 8.2rem;
+}
+.container:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.title {
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.count {
+  color: rgb(83, 100, 113);
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 1.6rem;
+}
