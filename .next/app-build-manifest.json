@@ -11,11 +11,22 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
+    "/(afterLogin)/@modal/default": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(afterLogin)/@modal/default.js"
+    ],
     "/(afterLogin)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(afterLogin)/layout.css",
       "static/chunks/app/(afterLogin)/layout.js"
+    ],
+    "/(afterLogin)/compose/tweet/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/compose/tweet/page.css",
+      "static/chunks/app/(afterLogin)/compose/tweet/page.js"
     ],
     "/(afterLogin)/home/page": [
       "static/chunks/webpack.js",
@@ -23,20 +34,37 @@
       "static/css/app/(afterLogin)/home/page.css",
       "static/chunks/app/(afterLogin)/home/page.js"
     ],
-    "/(afterLogin)/search/page": [
+    "/(afterLogin)/@modal/(.)compose/tweet/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(afterLogin)/search/page.js"
+      "static/css/app/(afterLogin)/@modal/(.)compose/tweet/page.css",
+      "static/chunks/app/(afterLogin)/@modal/(.)compose/tweet/page.js"
     ],
-    "/(afterLogin)/explore/page": [
+    "/(beforeLogin)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(afterLogin)/explore/page.js"
+      "static/chunks/app/(beforeLogin)/page.js"
+    ],
+    "/(beforeLogin)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(beforeLogin)/layout.css",
+      "static/chunks/app/(beforeLogin)/layout.js"
+    ],
+    "/(beforeLogin)/@modal/default": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(beforeLogin)/@modal/default.js"
     ],
     "/(afterLogin)/messages/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(afterLogin)/messages/page.js"
+    ],
+    "/(afterLogin)/explore/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(afterLogin)/explore/page.js"
     ],
     "/(afterLogin)/[username]/page": [
       "static/chunks/webpack.js",

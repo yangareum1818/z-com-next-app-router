@@ -1,5 +1,10 @@
 {
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(afterLogin)/compose/tweet/page": "app/(afterLogin)/compose/tweet/page.js",
   "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js",
-  "/(afterLogin)/search/page": "app/(afterLogin)/search/page.js",
+  "/(afterLogin)/@modal/(.)compose/tweet/page": "app/(afterLogin)/@modal/(.)compose/tweet/page.js",
+  "/(beforeLogin)/page": "app/(beforeLogin)/page.js",
+  "/(afterLogin)/messages/page": "app/(afterLogin)/messages/page.js",
+  "/(afterLogin)/explore/page": "app/(afterLogin)/explore/page.js",
   "/(afterLogin)/[username]/page": "app/(afterLogin)/[username]/page.js"
 }
