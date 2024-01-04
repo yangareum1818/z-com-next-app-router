@@ -1,3 +1,5 @@
 {
-  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js"
+  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js",
+  "/(afterLogin)/search/page": "app/(afterLogin)/search/page.js",
+  "/(afterLogin)/[username]/page": "app/(afterLogin)/[username]/page.js"
 }

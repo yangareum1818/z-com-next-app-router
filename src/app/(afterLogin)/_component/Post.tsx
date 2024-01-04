@@ -4,6 +4,7 @@ import style from "./post.module.css";
 import dayjs from "dayjs";
 import "dayjs/locale/ko";
 import relativeTime from "dayjs/plugin/relativeTime";
+import ActionButtons from "./ActionButtons";
 
 dayjs.locale("ko");
 dayjs.extend(relativeTime);
@@ -43,7 +44,7 @@ export default function Post() {
           </div>
           <div>{target.content}</div>
           <div className={style.postImageSection}></div>
-          {/* <ActionButtons post={post} /> */}
+          <ActionButtons />
         </div>
       </div>
     </article>
