@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 60rem;
+  border-right: 0.1rem solid rgb(239, 243, 244);
+  border-left: 0.1rem solid rgb(239, 243, 244);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  padding-left: 1.6rem;
+  height: 5.3rem;
+  width: 59.8rem;
+  backdrop-filter: blur(1.2rem);
+  border-bottom: 0.1rem solid rgb(239, 243, 244);
+}
+.headerTitle {
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.postList {
+  margin-top: 5.3rem;
+}
