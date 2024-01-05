@@ -1,5 +1,6 @@
 .trendBg {
   margin-top: 1.2rem;
+  background-color: rgb(var(--background-end-rgb));
   border-radius: 1.6rem;
 }
 .trend {

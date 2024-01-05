@@ -32,13 +32,13 @@
   top: 0.8rem;
   width: 3.4rem;
   height: 3.4rem;
-  background: #fff;
+  background: rgb(var(--background-start-rgb));
   border-radius: 1.7rem;
   border: none;
   cursor: pointer;
 }
 .closeButton:hover {
-  background: rgba(15, 20, 25, 0.1);
+  background: rgba(var(--background-end-rgb));
 }
 
 .modalForm {

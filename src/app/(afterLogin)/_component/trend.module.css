@@ -4,7 +4,7 @@
   height: 8.2rem;
 }
 .container:hover {
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(var(--background-start-rgb));
 }
 
 .title {
