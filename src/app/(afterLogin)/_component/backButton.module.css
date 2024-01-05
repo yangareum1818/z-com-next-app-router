@@ -1,0 +1,14 @@
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  background: #fff;
+  border: none;
+  border-radius: 1.7rem;
+  cursor: pointer;
+}
+.backButton:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
