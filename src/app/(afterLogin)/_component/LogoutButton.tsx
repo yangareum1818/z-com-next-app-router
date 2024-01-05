@@ -4,7 +4,11 @@ import style from "./logoutButton.module.css";
 
 export default function LogoutButton() {
   const onLogout = () => {};
-  const me = { id: "yangareum1818", nickname: "알음짱", image: "5Udwvqim.jpg" };
+  const me = {
+    id: "yangareum1818",
+    nickname: "알음짱",
+    image: "/5Udwvqim.jpg",
+  };
 
   return (
     <button className={style.logOutButton} onClick={onLogout}>
