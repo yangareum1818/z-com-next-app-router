@@ -11,11 +11,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/(afterLogin)/@modal/default": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(afterLogin)/@modal/default.js"
-    ],
     "/(afterLogin)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -33,12 +28,6 @@
       "static/chunks/main-app.js",
       "static/css/app/(afterLogin)/home/page.css",
       "static/chunks/app/(afterLogin)/home/page.js"
-    ],
-    "/(afterLogin)/@modal/(.)compose/tweet/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(afterLogin)/@modal/(.)compose/tweet/page.css",
-      "static/chunks/app/(afterLogin)/@modal/(.)compose/tweet/page.js"
     ],
     "/(beforeLogin)/page": [
       "static/chunks/webpack.js",
@@ -67,15 +56,9 @@
       "static/css/app/(afterLogin)/explore/page.css",
       "static/chunks/app/(afterLogin)/explore/page.js"
     ],
-    "/(afterLogin)/[username]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(afterLogin)/[username]/page.js"
-    ],
     "/(afterLogin)/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(afterLogin)/search/page.css",
       "static/chunks/app/(afterLogin)/search/page.js"
     ]
   }
