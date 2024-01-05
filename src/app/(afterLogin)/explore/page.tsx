@@ -1,6 +1,6 @@
-import SearchForm from "@/app/(afterLogin)/_component/SearchForm";
 import style from "./explore.module.css";
 import Trend from "../_component/Trend";
+import SearchForm from "../_component/SearchForm";
 
 export default function Explore() {
   return (

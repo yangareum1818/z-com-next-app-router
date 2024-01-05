@@ -59,7 +59,13 @@
     "/(afterLogin)/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/search/page.css",
       "static/chunks/app/(afterLogin)/search/page.js"
+    ],
+    "/(afterLogin)/@modal/default": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(afterLogin)/@modal/default.js"
     ]
   }
 }
