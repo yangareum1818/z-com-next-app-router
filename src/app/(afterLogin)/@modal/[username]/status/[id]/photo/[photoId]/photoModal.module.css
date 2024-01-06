@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100dvw;
+  height: 100dvh;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.imageZone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.imageZone img {
+  display: none;
+}
+.imageZone .image {
+  flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.buttonZone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.buttonInner {
+  width: 60rem;
+  height: 6rem;
+}
+
+.commentZone {
+  width: 35rem;
+  background: #fff;
+  border-left: 0.1rem solid rgb(239, 243, 244);
+  overflow: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  background: rgba(0, 0, 0, 0.75);
+  border: none;
+  border-radius: 1.7rem;
+  cursor: pointer;
+}
+.closeButton:hover {
+  background-color: rgba(25, 25, 25, 0.75);
+}
+.closeButton svg {
+  fill: #fff;
+}

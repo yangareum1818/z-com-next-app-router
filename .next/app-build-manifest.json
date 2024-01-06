@@ -48,8 +48,20 @@
     "/(afterLogin)/[username]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(afterLogin)/[username]/page.js",
-      "static/css/app/(afterLogin)/[username]/page.css"
+      "static/css/app/(afterLogin)/[username]/page.css",
+      "static/chunks/app/(afterLogin)/[username]/page.js"
+    ],
+    "/(afterLogin)/[username]/status/[id]/photo/[photoId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/[username]/status/[id]/photo/[photoId]/page.css",
+      "static/chunks/app/(afterLogin)/[username]/status/[id]/photo/[photoId]/page.js"
+    ],
+    "/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.css",
+      "static/chunks/app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.js"
     ]
   }
 }
