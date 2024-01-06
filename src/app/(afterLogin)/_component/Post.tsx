@@ -3,14 +3,22 @@ import style from "./post.module.css";
 
 import dayjs from "dayjs";
 import "dayjs/locale/ko";
+import { faker } from "@faker-js/faker";
+
 import relativeTime from "dayjs/plugin/relativeTime";
 import ActionButtons from "./ActionButtons";
+import PostArticle from "./PostArticle";
 
 dayjs.locale("ko");
 dayjs.extend(relativeTime);
 
-export default function Post() {
+type Props = {
+  noImage?: boolean;
+};
+
+export default function Post({ noImage }: Props) {
   const target = {
+    postId: 1,
     User: {
       id: "elonmusk",
       image: "/yRsRRjGO.jpg",
@@ -18,11 +26,17 @@ export default function Post() {
     },
     content: "일론이 머스크가 트위터를 만들었는데 이거를 x로 바꿨다구 ??",
     createAt: new Date(),
-    Images: [],
+    Images: [] as any,
   };
+  if (Math.random() > 0.5 && !noImage) {
+    target.Images.push({
+      imageId: 1,
+      link: faker.image.urlLoremFlickr(),
+    });
+  }
 
   return (
-    <article className={style.post}>
+    <PostArticle post={target}>
       <div className={style.postWrapper}>
         <div className={style.postUserSection}>
           <Link href={`/${target.User.id}`} className={style.postUserImage}>
@@ -43,10 +57,19 @@ export default function Post() {
             </span>
           </div>
           <div>{target.content}</div>
-          <div className={style.postImageSection}></div>
+          <div className={style.postImageSection}>
+            {target.Images && target.Images.length > 0 && (
+              <Link
+                href={`/${target.User.id}/status/${target.postId}/photo/${target.Images[0].imageId}`}
+                className={style.postImageSection}
+              >
+                <img src={target.Images[0]?.link} alt="" />
+              </Link>
+            )}
+          </div>
           <ActionButtons />
         </div>
       </div>
-    </article>
+    </PostArticle>
   );
 }
