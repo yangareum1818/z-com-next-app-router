@@ -62,6 +62,22 @@
       "static/chunks/main-app.js",
       "static/css/app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.css",
       "static/chunks/app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.js"
+    ],
+    "/(beforeLogin)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(beforeLogin)/page.js"
+    ],
+    "/(beforeLogin)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(beforeLogin)/layout.css",
+      "static/chunks/app/(beforeLogin)/layout.js"
+    ],
+    "/(beforeLogin)/@modal/default": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(beforeLogin)/@modal/default.js"
     ]
   }
 }
