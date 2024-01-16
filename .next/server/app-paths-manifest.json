@@ -1,5 +1,6 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(afterLogin)/messages/page": "app/(afterLogin)/messages/page.js",
-  "/(afterLogin)/messages/[room]/page": "app/(afterLogin)/messages/[room]/page.js"
+  "/(afterLogin)/messages/[room]/page": "app/(afterLogin)/messages/[room]/page.js",
+  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js"
 }
