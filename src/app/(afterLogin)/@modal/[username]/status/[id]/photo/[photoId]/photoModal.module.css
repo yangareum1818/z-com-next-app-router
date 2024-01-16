@@ -37,7 +37,7 @@
 
 .commentZone {
   width: 35rem;
-  background: #fff;
+  background: rgb(var(--background-start-rgb));
   border-left: 0.1rem solid rgb(239, 243, 244);
   overflow: auto;
 }

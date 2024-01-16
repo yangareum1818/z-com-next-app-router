@@ -51,6 +51,7 @@
   width: 100%;
 }
 .postBody > * {
+  color: rgb(var(--foreground-rgb));
   font-size: 1.5rem;
 }
 .postMeta {
