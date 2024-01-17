@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
-import style from "./naveMenu.module.css";
+import style from "./naveMenu.module.scss";
 
 export default function NavMenu() {
   const segment = useSelectedLayoutSegment();
