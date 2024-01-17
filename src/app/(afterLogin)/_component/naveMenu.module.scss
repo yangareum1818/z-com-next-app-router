@@ -1,0 +1,26 @@
+@import "../../variables.module.scss";
+
+.navPill {
+  display: inline-flex;
+  align-items: center;
+  height: 5rem;
+  padding: 1.2rem;
+}
+
+.navPill:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+  border-radius: 2.9rem;
+}
+
+.navPill > div {
+  margin-left: 2rem;
+  margin-right: 1.6rem;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+@include desktop {
+  .navPill > div {
+    display: none;
+  }
+}

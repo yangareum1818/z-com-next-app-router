@@ -46,5 +46,5 @@
   font-size: 1.5rem;
 }
 .roomChatInfo b {
-  color: #000;
+  color: rgb(var(--foreground-rgb));
 }
