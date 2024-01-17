@@ -1,6 +1,6 @@
 "use client";
 
-import style from "./logoutButton.module.css";
+import style from "./logoutButton.module.scss";
 
 export default function LogoutButton() {
   const onLogout = () => {};
