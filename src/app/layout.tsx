@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./variables.module.scss";
-import styles from "./page.module.css";
+import { MSWCompoent } from "./_component/MSWCompenent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +14,10 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MSWCompoent />
+        {children}
+      </body>
     </html>
   );
 };
