@@ -1,5 +1,4 @@
 {
-  "/(afterLogin)/messages/page": "app/(afterLogin)/messages/page.js",
-  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(beforeLogin)/page": "app/(beforeLogin)/page.js"
 }

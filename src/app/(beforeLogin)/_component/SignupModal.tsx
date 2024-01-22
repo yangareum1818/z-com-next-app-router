@@ -1,28 +1,56 @@
-"use client";
-
+import BackButton from "@/app/(afterLogin)/_component/BackButton";
 import style from "./signup.module.css";
+import { redirect } from "next/navigation";
 
 export default function SignupModal() {
+  const submit = async (formData: FormData) => {
+    "use server";
+    if (!formData.get("id")) {
+      return { message: "no_id" };
+    }
+    if (!formData.get("name")) {
+      return { message: "no_name" };
+    }
+    if (!formData.get("password")) {
+      return { message: "no_password" };
+    }
+    if (!formData.get("image")) {
+      return { message: "no_image" };
+    }
+    let shouldRedirect = false;
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/users`,
+        {
+          method: "post",
+          body: formData,
+          credentials: "include",
+        }
+      );
+      console.log(response.status);
+      console.log(await response.json());
+      if (response.status === 403) {
+        return { message: "user_exists" };
+      }
+      shouldRedirect = true;
+    } catch (error) {
+      console.error(error);
+      return;
+    }
+    if (shouldRedirect) {
+      redirect("/home");
+    }
+  };
+
   return (
     <>
       <div className={style.modalBackground}>
         <div className={style.modal}>
           <div className={style.modalHeader}>
-            <button className={style.closeButton}>
-              <svg
-                width={24}
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                className="r-18jsvk2 r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03"
-              >
-                <g>
-                  <path d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"></path>
-                </g>
-              </svg>
-            </button>
+            <BackButton />
             <div>계정을 생성하세요.</div>
           </div>
-          <form>
+          <form action={submit}>
             <div className={style.modalBody}>
               <div className={style.inputDiv}>
                 <label className={style.inputLabel} htmlFor="id">
@@ -34,6 +62,7 @@ export default function SignupModal() {
                   className={style.input}
                   type="text"
                   placeholder=""
+                  required
                 />
               </div>
 
@@ -47,6 +76,7 @@ export default function SignupModal() {
                   className={style.input}
                   type="text"
                   placeholder=""
+                  required
                 />
               </div>
 
@@ -60,6 +90,7 @@ export default function SignupModal() {
                   className={style.input}
                   type="password"
                   placeholder=""
+                  required
                 />
               </div>
 
@@ -74,10 +105,13 @@ export default function SignupModal() {
                   type="file"
                   accept="image/*"
                   style={{ lineHeight: "3.7rem" }}
+                  required
                 />
               </div>
               <div className={style.modalFooter}>
-                <button className={style.actionButton}>가입하기</button>
+                <button type="submit" className={style.actionButton}>
+                  가입하기
+                </button>
                 <div className={style.error}></div>
               </div>
             </div>
