@@ -48,6 +48,7 @@
 }
 .signup {
   background: rgba(29, 155, 240, 1);
+  color: #fff;
 }
 
 .signup:hover {
@@ -55,10 +56,11 @@
 }
 
 .login {
-  border: 0.1rem solid #fff;
+  color: rgb(29, 155, 240);
+  border: 0.1rem solid rgb(207, 217, 222);
 }
 
 .login:hover {
-  background: #fff;
+  background: rgba(29, 155, 240, 0.1);
   color: #000;
 }
