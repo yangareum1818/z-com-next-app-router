@@ -1,5 +1,5 @@
 {
-  "/(beforeLogin)/@modal/(.)i/flow/signup/page": "app/(beforeLogin)/@modal/(.)i/flow/signup/page.js",
   "/(beforeLogin)/page": "app/(beforeLogin)/page.js",
+  "/(beforeLogin)/@modal/(.)i/flow/signup/page": "app/(beforeLogin)/@modal/(.)i/flow/signup/page.js",
   "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js"
 }
