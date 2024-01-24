@@ -1,5 +1,7 @@
 {
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/(beforeLogin)/page": "app/(beforeLogin)/page.js",
   "/(beforeLogin)/@modal/(.)i/flow/signup/page": "app/(beforeLogin)/@modal/(.)i/flow/signup/page.js",
-  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js"
+  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js",
+  "/(beforeLogin)/i/flow/login/page": "app/(beforeLogin)/i/flow/login/page.js"
 }
