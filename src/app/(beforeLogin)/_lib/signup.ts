@@ -3,7 +3,6 @@
 import { redirect } from "next/navigation";
 
 export default async (prevState: any, formData: FormData) => {
-  "use server";
   if (!formData.get("id") || !(formData.get("id") as string)?.trim()) {
     return { message: "no_id" };
   }
