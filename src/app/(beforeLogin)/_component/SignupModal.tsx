@@ -1,6 +1,6 @@
 "use client";
 
-import BackButton from "@/app/(afterLogin)/_component/BackButton";
+import BackButton from "@/app/(beforeLogin)/_component/BackButton";
 import style from "./signup.module.css";
 import onSubmit from "../_lib/signup";
 import { useFormState, useFormStatus } from "react-dom";
@@ -22,7 +22,7 @@ export default function SignupModal() {
       <div className={style.modal}>
         <div className={style.modalHeader}>
           <BackButton />
-          <div>계정을 생성하세요.</div>
+          <h3>계정을 생성하세요.</h3>
         </div>
         <form action={formAction}>
           <div className={style.modalBody}>
