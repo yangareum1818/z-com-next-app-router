@@ -1,30 +1,16 @@
 import style from "./home.module.css";
 import Tab from "./_component/Tab";
 import PostForm from "./_component/PostForm";
-import Post from "@/app/(afterLogin)/_component/Post";
 import TabProvider from "./_component/TabProvider";
 import {
   dehydrate,
   HydrationBoundary,
   QueryClient,
 } from "@tanstack/react-query";
+import { getPostRecommends } from "./_lib/getPostRecommends";
+import PostRecommends from "./_component/PostRecommends";
 
-async function getPostRecommends() {
-  const res = await fetch(`http://localhost:9090/api/postRecmmends`, {
-    next: {
-      tags: ["posts", "recommends"],
-    },
-    cache: "no-store",
-  });
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data!!!");
-  }
-
-  return res.json();
-}
-
-const HomePage = async () => {
+export default async function HomePage() {
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
     queryKey: ["posts", "recommends"],
@@ -38,22 +24,9 @@ const HomePage = async () => {
         <TabProvider>
           <Tab />
           <PostForm />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+          <PostRecommends />
         </TabProvider>
       </HydrationBoundary>
     </main>
   );
-};
-export default HomePage;
+}

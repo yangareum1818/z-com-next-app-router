@@ -9,26 +9,20 @@ import relativeTime from "dayjs/plugin/relativeTime";
 import ActionButtons from "./ActionButtons";
 import PostArticle from "./PostArticle";
 import PostImages from "./PostImages";
+import { Post } from "@/model/Post";
 
 dayjs.locale("ko");
 dayjs.extend(relativeTime);
 
 type Props = {
   noImage?: boolean;
+  post: Post;
 };
 
-export default function Post({ noImage }: Props) {
-  const target = {
-    postId: 1,
-    User: {
-      id: "elonmusk",
-      image: "/yRsRRjGO.jpg",
-      nickname: "일론이 머스크",
-    },
-    content: "일론이 머스크가 트위터를 만들었는데 이거를 x로 바꿨다구 ??",
-    createAt: new Date(),
-    Images: [] as any,
-  };
+export default function Post({ noImage, post }: Props) {
+  const target = post;
+  console.log("target", target);
+
   if (Math.random() > 0.5 && !noImage) {
     target.Images.push(
       {
