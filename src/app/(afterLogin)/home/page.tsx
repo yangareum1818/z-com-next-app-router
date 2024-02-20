@@ -7,8 +7,8 @@ import {
   HydrationBoundary,
   QueryClient,
 } from "@tanstack/react-query";
-import { getPostRecommends } from "./_lib/getPostRecommends";
 import TabDecider from "./_component/TabDecider";
+import { getPostRecommends } from "./_lib/getPostRecommends";
 
 export default async function HomePage() {
   const queryClient = new QueryClient();
