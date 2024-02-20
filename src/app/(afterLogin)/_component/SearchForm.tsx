@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import style from "./searchForm.module.css";
+import { FormEventHandler } from "react";
 
 type Props = { q?: string };
 
