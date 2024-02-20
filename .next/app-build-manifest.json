@@ -17,34 +17,16 @@
       "static/css/app/(afterLogin)/layout.css",
       "static/chunks/app/(afterLogin)/layout.js"
     ],
-    "/(afterLogin)/home/page": [
+    "/(afterLogin)/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(afterLogin)/home/page.css",
-      "static/chunks/app/(afterLogin)/home/page.js"
+      "static/css/app/(afterLogin)/search/page.css",
+      "static/chunks/app/(afterLogin)/search/page.js"
     ],
     "/(afterLogin)/@modal/default": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(afterLogin)/@modal/default.js"
-    ],
-    "/(afterLogin)/explore/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(afterLogin)/explore/page.css",
-      "static/chunks/app/(afterLogin)/explore/page.js"
-    ],
-    "/(afterLogin)/messages/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(afterLogin)/messages/page.css",
-      "static/chunks/app/(afterLogin)/messages/page.js"
-    ],
-    "/(afterLogin)/[username]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(afterLogin)/[username]/page.css",
-      "static/chunks/app/(afterLogin)/[username]/page.js"
     ]
   }
 }
