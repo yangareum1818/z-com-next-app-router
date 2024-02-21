@@ -27,6 +27,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(afterLogin)/@modal/default.js"
+    ],
+    "/(afterLogin)/home/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/home/page.css",
+      "static/chunks/app/(afterLogin)/home/page.js"
     ]
   }
 }
