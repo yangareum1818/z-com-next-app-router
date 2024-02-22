@@ -3,27 +3,26 @@
 import { useSession } from "next-auth/react";
 import style from "./followRecommend.module.css";
 import { useRouter } from "next/navigation";
+import { User } from "@/model/User";
 
-export default function FollowRecommend() {
+type Props = {
+  user: User;
+};
+
+export default function FollowRecommend({ user }: Props) {
   const router = useRouter();
-  const { data } = useSession();
+  const { data: session } = useSession();
   const onFollow = () => {
-    if (!data?.user) {
+    if (!session?.user) {
       router.replace("/login");
     }
-  };
-
-  const user = {
-    id: "yangareum7979",
-    nickname: "알음쨩쨩",
-    image: "/yRsRRjGO.jpg",
   };
 
   return (
     <div className={style.container}>
       <div className={style.userLogoSection}>
         <div className={style.userLogo}>
-          <img src={user.image} alt={user.id} />
+          <img src={user.image} alt={user.nickname} />
         </div>
       </div>
       <div className={style.userInfo}>
