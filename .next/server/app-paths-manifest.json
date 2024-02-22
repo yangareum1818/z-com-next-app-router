@@ -1,3 +1,7 @@
 {
-  "/(afterLogin)/search/page": "app/(afterLogin)/search/page.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(afterLogin)/search/page": "app/(afterLogin)/search/page.js",
+  "/(afterLogin)/explore/page": "app/(afterLogin)/explore/page.js",
+  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js"
 }

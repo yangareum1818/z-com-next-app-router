@@ -33,6 +33,30 @@
       "static/chunks/main-app.js",
       "static/css/app/(afterLogin)/home/page.css",
       "static/chunks/app/(afterLogin)/home/page.js"
+    ],
+    "/(afterLogin)/messages/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/messages/page.css",
+      "static/chunks/app/(afterLogin)/messages/page.js"
+    ],
+    "/(afterLogin)/[username]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/[username]/page.css",
+      "static/chunks/app/(afterLogin)/[username]/page.js"
+    ],
+    "/(afterLogin)/explore/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/explore/page.css",
+      "static/chunks/app/(afterLogin)/explore/page.js"
+    ],
+    "/(afterLogin)/[username]/status/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/[username]/status/[id]/page.css",
+      "static/chunks/app/(afterLogin)/[username]/status/[id]/page.js"
     ]
   }
 }
