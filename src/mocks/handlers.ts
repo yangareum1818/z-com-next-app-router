@@ -217,6 +217,14 @@ export const handlers = [
   http.get("/api/posts/:postId", ({ request, params }): StrictResponse<any> => {
     // 특정 사용자의 게시글 하나
     const { postId } = params;
+    if (parseInt(postId as string) > 10) {
+      return HttpResponse.json(
+        { message: "no_such_single_post" },
+        {
+          status: 404,
+        }
+      );
+    }
     return HttpResponse.json({
       postId,
       User: User[0],
@@ -229,7 +237,7 @@ export const handlers = [
       createdAt: generateDate(),
     });
   }),
-  http.get("/api/postId/:postId/comments", ({ request, params }) => {
+  http.get("/api/posts/:postId/comments", ({ request, params }) => {
     // 게시글의 댓글
     const { postId } = params;
     return HttpResponse.json([
@@ -237,7 +245,11 @@ export const handlers = [
         postId: 1,
         User: User[0],
         content: `${1} 게시글 ${postId}의 답글`,
-        Images: [{ imageId: 1, link: faker.image.urlLoremFlickr() }],
+        Images: [
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+        ],
         createdAt: generateDate(),
       },
       {
@@ -251,7 +263,10 @@ export const handlers = [
         postId: 3,
         User: User[0],
         content: `${3} 게시글 ${postId}의 답글`,
-        Images: [{ imageId: 1, link: faker.image.urlLoremFlickr() }],
+        Images: [
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+        ],
         createdAt: generateDate(),
       },
       {
@@ -265,7 +280,12 @@ export const handlers = [
         postId: 5,
         User: User[0],
         content: `${5} 게시글 ${postId}의 답글`,
-        Images: [{ imageId: 1, link: faker.image.urlLoremFlickr() }],
+        Images: [
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+          { imageId: 1, link: faker.image.urlLoremFlickr() },
+        ],
         createdAt: generateDate(),
       },
     ]);

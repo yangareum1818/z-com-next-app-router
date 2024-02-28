@@ -25,9 +25,13 @@ export default function RQProvider({ children }: Props) {
   return (
     <QueryClientProvider client={client}>
       {children}
-      <ReactQueryDevtools
-        initialIsOpen={process.env.NEXT_PUBLIC_MODE === "local"}
-      />
+
+      {/* devTool fontSize */}
+      <div style={{ fontSize: "16px" }}>
+        <ReactQueryDevtools
+          initialIsOpen={process.env.NEXT_PUBLIC_MODE === "local"}
+        />
+      </div>
     </QueryClientProvider>
   );
 }

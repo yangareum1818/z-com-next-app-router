@@ -3,7 +3,6 @@ import style from "./post.module.css";
 
 import dayjs from "dayjs";
 import "dayjs/locale/ko";
-import { faker } from "@faker-js/faker";
 
 import relativeTime from "dayjs/plugin/relativeTime";
 import ActionButtons from "./ActionButtons";
@@ -21,28 +20,6 @@ type Props = {
 
 export default function Post({ noImage, post }: Props) {
   const target = post;
-  console.log("target", target);
-
-  if (Math.random() > 0.5 && !noImage) {
-    target.Images.push(
-      {
-        imageId: 1,
-        link: faker.image.urlLoremFlickr(),
-      },
-      {
-        imageId: 2,
-        link: faker.image.urlLoremFlickr(),
-      },
-      {
-        imageId: 3,
-        link: faker.image.urlLoremFlickr(),
-      },
-      {
-        imageId: 4,
-        link: faker.image.urlLoremFlickr(),
-      }
-    );
-  }
 
   return (
     <PostArticle post={target}>
@@ -66,7 +43,7 @@ export default function Post({ noImage, post }: Props) {
             </span>
           </div>
           <div>{target.content}</div>
-          <PostImages post={target} />
+          {!noImage && <PostImages post={target} />}
           <ActionButtons />
         </div>
       </div>
