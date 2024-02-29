@@ -6,15 +6,13 @@ import { useRouter } from "next/navigation";
 
 export default function LogoutButton() {
   const router = useRouter();
+  const { data: me } = useSession();
+
   const onLogout = () => {
     signOut({ redirect: false }).then(() => {
       router.replace("/");
     });
   };
-
-  const { data: me } = useSession();
-
-  console.log("me", me);
 
   if (!me?.user) return null;
 

@@ -69,6 +69,12 @@
       "static/chunks/main-app.js",
       "static/css/app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.css",
       "static/chunks/app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.js"
+    ],
+    "/(afterLogin)/@modal/(.)compose/tweet/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(afterLogin)/@modal/(.)compose/tweet/page.css",
+      "static/chunks/app/(afterLogin)/@modal/(.)compose/tweet/page.js"
     ]
   }
 }
