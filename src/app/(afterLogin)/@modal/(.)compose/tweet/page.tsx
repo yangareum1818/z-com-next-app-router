@@ -3,13 +3,17 @@
 import { useRef, useState } from "react";
 import style from "./tweetModal.module.css";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export default function TweetModal() {
   const imageRef = useRef<HTMLInputElement>(null);
   const [content, setContent] = useState();
+  const router = useRouter();
   const { data: me } = useSession();
 
-  const onClickClose = () => {};
+  const onClickClose = () => {
+    router.back();
+  };
   const onChangeContent = () => {};
   const onClickButton = () => {};
   const onSubmit = () => {};
