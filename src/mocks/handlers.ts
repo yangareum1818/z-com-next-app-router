@@ -11,7 +11,7 @@ function generateDate() {
 }
 
 const User = [
-  { id: "yangareum", nickname: "아로밍", image: "/areum.png" },
+  { id: "yangareum1818", nickname: "아로밍", image: "/areum.png" },
   { id: "zerocho", nickname: "제로초", image: "/5Udwvqim.jpg" },
   { id: "elonmusk", nickname: "Elon Musk", image: "/yRsRRjGO.jpg" },
   { id: "leoturtle", nickname: "레오", image: faker.image.avatar() },
@@ -20,18 +20,11 @@ const User = [
 export const handlers = [
   http.post("/api/login", () => {
     console.log("로그인");
-    return HttpResponse.json(
-      {
-        id: "yangareum1818",
-        nickname: "알음쨩",
-        image: "/areum.png",
+    return HttpResponse.json(User[0], {
+      headers: {
+        "Set-Cookie": "connect.sid=msw-cookie;HttpOnly;Path=/",
       },
-      {
-        headers: {
-          "Set-Cookie": "connect.sid=msw-cookie;HttpOnly;Path=/",
-        },
-      }
-    );
+    });
   }),
   http.post("/api/logout", () => {
     console.log("로그아웃");
