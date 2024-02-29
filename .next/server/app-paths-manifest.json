@@ -1,9 +1,10 @@
 {
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(afterLogin)/explore/page": "app/(afterLogin)/explore/page.js",
   "/(afterLogin)/[username]/page": "app/(afterLogin)/[username]/page.js",
   "/(afterLogin)/[username]/status/[id]/page": "app/(afterLogin)/[username]/status/[id]/page.js",
   "/(afterLogin)/[username]/status/[id]/photo/[photoId]/page": "app/(afterLogin)/[username]/status/[id]/photo/[photoId]/page.js",
-  "/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page": "app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.js"
+  "/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page": "app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.js",
+  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js",
+  "/(afterLogin)/search/page": "app/(afterLogin)/search/page.js"
 }
