@@ -1,8 +1,9 @@
 {
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/(afterLogin)/[username]/status/[id]/photo/[photoId]/page": "app/(afterLogin)/[username]/status/[id]/photo/[photoId]/page.js",
-  "/(afterLogin)/messages/page": "app/(afterLogin)/messages/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(afterLogin)/explore/page": "app/(afterLogin)/explore/page.js",
+  "/(beforeLogin)/page": "app/(beforeLogin)/page.js",
   "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js",
-  "/(afterLogin)/[username]/page": "app/(afterLogin)/[username]/page.js",
+  "/(beforeLogin)/i/flow/login/page": "app/(beforeLogin)/i/flow/login/page.js",
   "/(afterLogin)/search/page": "app/(afterLogin)/search/page.js"
 }

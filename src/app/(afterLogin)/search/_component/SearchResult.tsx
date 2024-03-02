@@ -1,14 +1,13 @@
 "use client";
 
-import { useQuery } from "@tanstack/react-query";
 import Post from "@/app/(afterLogin)/_component/Post";
 import { Post as IPost } from "@/model/Post";
-import { getSearchResult } from "../_lib/getSearchResult";
+import { getSearchResult } from "@/app/(afterLogin)/search/_lib/getSearchResult";
+import { useQuery } from "@tanstack/react-query";
 
 type Props = {
   searchParams: { q: string; f?: string; pf?: string };
 };
-
 export default function SearchResult({ searchParams }: Props) {
   const { data } = useQuery<
     IPost[],
