@@ -1,11 +1,9 @@
 {
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/(afterLogin)/[username]/status/[id]/page": "app/(afterLogin)/[username]/status/[id]/page.js",
-  "/(afterLogin)/[username]/status/[id]/photo/[photoId]/page": "app/(afterLogin)/[username]/status/[id]/photo/[photoId]/page.js",
-  "/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page": "app/(afterLogin)/@modal/[username]/status/[id]/photo/[photoId]/page.js",
-  "/(afterLogin)/search/page": "app/(afterLogin)/search/page.js",
-  "/(afterLogin)/@modal/(.)compose/tweet/page": "app/(afterLogin)/@modal/(.)compose/tweet/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(afterLogin)/explore/page": "app/(afterLogin)/explore/page.js",
-  "/(afterLogin)/[username]/page": "app/(afterLogin)/[username]/page.js",
-  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js"
+  "/(beforeLogin)/page": "app/(beforeLogin)/page.js",
+  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js",
+  "/(beforeLogin)/i/flow/login/page": "app/(beforeLogin)/i/flow/login/page.js",
+  "/(afterLogin)/search/page": "app/(afterLogin)/search/page.js"
 }
